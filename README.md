@@ -23,3 +23,4 @@ Sass
 - Installed node-sass-chokidar to handle preprocessing
 - Installed npm-run-all to watch for changes to sass files
 - Updated this Readme.md
+- Setup and tested Sass preprocessing
