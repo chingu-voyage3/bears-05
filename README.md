@@ -7,10 +7,10 @@ Coming Soon!
 Responsive Movie database using the TMDB API
 
 ## Team  
-@mmadden
-@JashuHB
-@Nicknyr
-@tlannoye11
+@mmadden  
+@JashuHB  
+@Nicknyr  
+@tlannoye11  
 
 ## Stack  
 React (create-react-app)  
