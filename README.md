@@ -16,6 +16,10 @@ Responsive Movie database using the TMDB API
 React (create-react-app)  
 Sass
 
+## Packages  
+node-sass-chokidar  |  https://github.com/michaelwayman/node-sass-chokidar  
+npm-run-all |  https://github.com/mysticatea/npm-run-all
+
 ## Changelog  
 ### 0.0.0  
 - Initial commit
