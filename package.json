@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass-chokidar": "0.0.3", // npm install --save node-sass-chokidar  |  https://github.com/michaelwayman/node-sass-chokidar
-    "npm-run-all": "^4.1.2", // npm install --save npm-run-all |  https://github.com/mysticatea/npm-run-all
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
