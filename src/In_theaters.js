@@ -31,21 +31,20 @@ componentDidMount() {
 
   render() {
     return (
-      <div style={{display: "inlineBlock", width: "100%", marginLeft: "auto", marginRight: "auto", marginTop: "10em"}}>
-      <h1 style={{textAlign: "center", margin: "1em"}}>In Theaters Now</h1>
-      <ul style={{padding: "0", textAlign: "center"}}>
+      <div class="in_theaters_container">
+      <h1>In Theaters Now</h1>
+      <ul>
         {this.state.posts.map(function(post, index){
           return (
-              <div key={index} style={{width: "30%", backgroundColor: "#34495e",
-                height: "62em", textAlign: "center", margin: "1em", float: "right", border: ".5px solid #CDCDCD", boxShadow: "5px 5px 5px black"}}>
+              <div key={index}>
 
-                <h3 style={{paddingTop: "1.5em"}}>{post.title}</h3>
+                <h3>{post.title}</h3>
 
-                <p style={{padding: "20px", margin: "auto", textAlign: "left", lineHeight: "1.5", height: "20em"}}>{post.overview}</p>
+                <p>{post.overview}</p>
 
-                <img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" style={{margin: "auto", paddingTop: "2em"}} />
+                <img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" />
 
-                <h4 style={{paddingTop: "2em"}}>Rating: {post.vote}</h4>
+                <h4>Rating: {post.vote}</h4>
 
               </div>
             )

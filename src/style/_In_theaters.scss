@@ -1,0 +1,52 @@
+
+.in_theaters_container {
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+
+  div {
+    width: 30%;
+    background-color: #34495e;
+    height: 62em;
+    text-align: center;
+    margin: 1em;
+    float: right;
+    border: .5 solid #CDCDCD;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 1em;
+  }
+
+
+  ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  h3 {
+    padding-top: 1.5em;
+  }
+
+  p {
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.5;
+    height: 20em;
+  }
+
+  img {
+    margin: auto;
+    padding-top: 2em;
+  }
+
+  h4 {
+    padding-top: 2em;
+  }
+
+}

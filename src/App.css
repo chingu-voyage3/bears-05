@@ -848,16 +848,85 @@ body.noScroll {
 body {
   background: Red; }
 
+.in_theaters_container {
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em; }
+  .in_theaters_container div {
+    width: 30%;
+    background-color: #34495e;
+    height: 62em;
+    text-align: center;
+    margin: 1em;
+    float: right;
+    border: .5 solid #CDCDCD;
+    box-shadow: 5px 5px 5px black; }
+  .in_theaters_container h1 {
+    text-align: center;
+    margin: 1em; }
+  .in_theaters_container ul {
+    padding: 0;
+    text-align: center; }
+  .in_theaters_container h3 {
+    padding-top: 1.5em; }
+  .in_theaters_container p {
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.5;
+    height: 20em; }
+  .in_theaters_container img {
+    margin: auto;
+    padding-top: 2em; }
+  .in_theaters_container h4 {
+    padding-top: 2em; }
+
+.navigation {
+  height: 4em;
+  background-color: #222222;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+  .navigation ul {
+    display: inline-block;
+    float: right;
+    margin-top: 1.2em; }
+    .navigation ul li {
+      display: inline;
+      color: white;
+      margin: 1em; }
+
+.footer {
+  height: 15em;
+  background-color: #222222;
+  clear: both; }
+
+.search-box {
+  height: 3em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7em;
+  margin-bottom: 5em; }
+
+form {
+  display: inline; }
+  form button {
+    display: inline;
+    float: right; }
+
 /*
   font-family: 'Roboto', sans-serif;
   font-family: 'Fjalla One', sans-serif;
   font-family: 'Cantarell', sans-serif;
 */
 body {
-  background-color: ghostwhite; }
+  background-color: snow; }
 
 h1, h2, h3, h4, h5 {
-  color: #83D0F2;
+  color: #2ecc71;
   font-family: 'Fjalla One', sans-serif; }
 
 h1 {
@@ -875,12 +944,12 @@ p {
   font-family: 'Cantarell', sans-serif; }
 
 a {
-  color: #83D0F2;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif; }
   a:hover {
-    color: white; }
+    color: #2ecc71; }
 
 input {
   font-family: 'Roboto', sans-serif; }
@@ -888,12 +957,12 @@ input {
 button {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #34495e;
-  border: 2px solid #34495e;
+  background-color: #2ecc71;
+  border: 2px solid #2ecc71;
   color: white;
   padding: .8em 1.6em;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px; }
   button:hover {
     background: white;
-    color: #34495e; }
+    color: #2ecc71; }

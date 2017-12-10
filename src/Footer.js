@@ -11,7 +11,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <div style={{ height: "15em", backgroundColor: "#222222", clear: "both"}}>
+      <div class="footer">
       </div>
     );
 

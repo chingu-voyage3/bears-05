@@ -12,10 +12,10 @@ export default class Searchbar extends Component {
   render() {
     return (
       <div>
-        <div class="search-box" style={{ height: "3em", width: "50%", marginLeft: "auto", marginRight: "auto", marginTop: "7em", marginBottom: "5em"}}>
-        <form style={{ display: "inline"}}>
+        <div class="search-box">
+        <form>
           <input type="text" placeholder="Search for a movie, tv show, actor, etc..."/>
-          <button style={{ display: "inline", float: "right"}}>Search</button>
+          <button>Search</button>
         </form>
         </div>
       </div>
