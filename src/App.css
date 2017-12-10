@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Bree+Serif|Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One|Roboto");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -846,3 +847,53 @@ body.noScroll {
 
 body {
   background: Red; }
+
+/*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Cantarell', sans-serif;
+*/
+body {
+  background-color: ghostwhite; }
+
+h1, h2, h3, h4, h5 {
+  color: #83D0F2;
+  font-family: 'Fjalla One', sans-serif; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.4em; }
+
+p {
+  color: white;
+  font-size: 1em;
+  font-family: 'Cantarell', sans-serif; }
+
+a {
+  color: #83D0F2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif; }
+  a:hover {
+    color: white; }
+
+input {
+  font-family: 'Roboto', sans-serif; }
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #34495e;
+  border: 2px solid #34495e;
+  color: white;
+  padding: .8em 1.6em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px; }
+  button:hover {
+    background: white;
+    color: #34495e; }
