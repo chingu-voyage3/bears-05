@@ -1,19 +1,41 @@
 
-
 .search-box {
-  height: 3em;
-  width: 50%;
+  margin-top: 5em;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7em;
-  margin-bottom: 5em;
 }
 
 form {
-  display: inline;
+  display: block;
 
   button {
-    display: inline;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    display: block;
   }
+}
+
+
+@media (min-width: 1200px) {
+  .search-box {
+    height: 3em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+    margin-bottom: 5em;
+  }
+
+  form {
+    display: inline;
+
+    button {
+      display: inline;
+      float: right;
+      margin: 0;
+    }
+  }
+
 }

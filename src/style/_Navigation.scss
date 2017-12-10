@@ -1,20 +1,38 @@
 
 .navigation {
-  height: 4em;
-  background-color: #222222;
-  position: fixed;
   width: 100%;
-  top: 0;
+  background-color: #222222;
+  color: white;
 
   ul {
-    display: inline-block;
-    float: right;
-    margin-top: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
 
     li {
-      display: inline;
-      color: white;
-      margin: 1em;
+      margin-top: 1em;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .navigation {
+    height: 4em;
+    position: fixed;
+    top: 0;
+
+    ul {
+      display: inline-block;
+      float: right;
+      margin-top: 1.2em;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      li {
+        display: inline;
+        margin: 1em;
+      }
     }
   }
 }

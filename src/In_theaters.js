@@ -36,13 +36,13 @@ componentDidMount() {
       <ul>
         {this.state.posts.map(function(post, index){
           return (
-              <div key={index}>
+              <div class="movie_cards" key={index}>
 
                 <h3>{post.title}</h3>
 
-                <p>{post.overview}</p>
+                <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="Movie Poster" />
 
-                <img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" />
+                <p>{post.overview}</p>
 
                 <h4>Rating: {post.vote}</h4>
 
