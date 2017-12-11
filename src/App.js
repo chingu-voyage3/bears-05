@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Searchbar from './Searchbar';
 import TvShows from './TV_shows';
 import Landing from './Landing';
+import Chingu from './Chingu';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Searchbar />
         <TvShows />
         <InTheaters />
+        <Chingu />
         <Footer />
       </div>
     );

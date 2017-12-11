@@ -6,6 +6,7 @@
 @import "./style/Searchbar.scss";
 @import "./style/TV_shows.scss";
 @import "./style/Landing.scss";
+@import "./style/Chingu.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One|Roboto');
 /*
@@ -37,6 +38,10 @@ h2 {
 
 h3 {
   font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.1em;
 }
 
 p {
