@@ -5,18 +5,13 @@ export default class Searchbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      initialState: "Search for movies, shows, actors, etc...",
-      currentText: " "
+      currentText: "Search for movies, shows, actors, etc..."
     }
   }
 
   changeText(currentText) {
     this.setState({currentText});
-    //console.log({currentText});
   }
-
-
-
 
   onHandleChange(event) {
     this.setState({
@@ -38,6 +33,7 @@ export default class Searchbar extends Component {
               <button onClick={this.changeText.bind(this, 'currentText')}>Search</button>
             </form>
           </div>
+          
         </div>
     );
 
