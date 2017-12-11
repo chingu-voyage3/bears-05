@@ -917,7 +917,8 @@ h1 {
 .navigation {
   width: 100%;
   background-color: #222222;
-  color: white; }
+  color: white;
+  z-index: 3; }
   .navigation ul {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -984,10 +985,11 @@ form {
   .search-box {
     height: 3em;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7em;
-    margin-bottom: 5em; }
+    margin-bottom: 5em;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 25%; }
   form {
     display: inline; }
     form button {
@@ -1060,6 +1062,12 @@ h1 {
       padding-top: 1.5em;
       padding-bottom: 0; } }
 
+.landing {
+  width: 100%; }
+
+.theater_background {
+  max-width: 100%; }
+
 /*
   font-family: 'Roboto', sans-serif;
   font-family: 'Fjalla One', sans-serif;
@@ -1082,9 +1090,10 @@ h3 {
   font-size: 1.4em; }
 
 p {
-  color: white;
+  color: #FCFCFC;
   font-size: 1em;
-  font-family: 'Cantarell', sans-serif; }
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 500; }
 
 a {
   color: white;

@@ -5,6 +5,7 @@
 @import "./style/Footer.scss";
 @import "./style/Searchbar.scss";
 @import "./style/TV_shows.scss";
+@import "./style/Landing.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One|Roboto');
 /*
@@ -39,9 +40,10 @@ h3 {
 }
 
 p {
-  color: white;
+  color: #FCFCFC;
   font-size: 1em;
   font-family: 'Cantarell', sans-serif;
+  font-weight: 500;
 }
 
 a {

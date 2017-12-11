@@ -5,6 +5,7 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import Searchbar from './Searchbar';
 import TvShows from './TV_shows';
+import Landing from './Landing';
 
 class App extends Component {
   render() {
