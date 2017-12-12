@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import axios from "axios";
 
 // Configuration   https://api.themoviedb.org/3/configuration?api_key=03b9a40695aae1f4e99a42e90e012e9e

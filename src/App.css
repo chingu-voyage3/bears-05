@@ -1072,14 +1072,16 @@ h1 {
   height: 15em;
   text-align: center;
   color: white;
-  background-color: #34495E; }
+  background-color: #34495E;
+  margin-top: 5em; }
   .chingu h4 {
     color: white;
-    padding: .5em; }
+    padding: .5em;
+    line-height: 1.3; }
   .chingu h2 {
     padding-top: 2em; }
   .chingu hr {
-    width: 40%;
+    width: 80%;
     border: 0;
     height: .5px;
     background: white;
@@ -1087,7 +1089,9 @@ h1 {
   .chingu a {
     color: #2ecc71;
     text-transform: none;
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.3; }
     .chingu a:hover {
       color: white; }
   .chingu .chingu_logo {
@@ -1096,6 +1100,10 @@ h1 {
     padding: .5em;
     margin-left: auto;
     margin-right: auto; }
+
+@media (min-width: 1200px) {
+  .chingu hr {
+    width: 40%; } }
 
 /*
   font-family: 'Roboto', sans-serif;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import axios from "axios";
 
 /* My Movie API key : https://api.themoviedb.org/3/movie/550?api_key=03b9a40695aae1f4e99a42e90e012e9e
@@ -8,8 +7,6 @@ import axios from "axios";
   https://api.themoviedb.org/3/movie/now_playing?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&page=1
 */
 
-const config = 'https://api.themoviedb.org/3/configuration?api_key=03b9a40695aae1f4e99a42e90e012e9e';
-const url = 'https://image.tmdb.org/t/p/w300/';
 
 export default class TvShows extends Component {
   constructor(props) {
