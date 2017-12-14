@@ -1,0 +1,41 @@
+
+.footer {
+  height: auto;
+  background-color: #222222;
+  clear: both;
+
+  ul {
+    text-align: left;
+    padding-top: 3em;
+
+    li {
+      margin: 1em;
+    }
+  }
+
+  .tmdb_logo {
+    height: 75px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    padding-bottom: 2em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .footer {
+    height: 15em;
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+
+    li {
+      display: inline;
+
+    }
+  }
+}

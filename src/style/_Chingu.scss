@@ -1,0 +1,56 @@
+
+.chingu {
+  height: 15em;
+  text-align: center;
+  color: white;
+  background-color: #34495E;
+  margin-top: 5em;
+
+  h4 {
+    color: white;
+    padding: .5em;
+    line-height: 1.3;
+  }
+
+  h2 {
+    padding-top: 2em;
+  }
+
+  hr {
+    width: 80%;
+    border: 0;
+    height: .5px;
+    background: white;
+    background-image:
+    linear-gradient(to right, #ccc, lightgrey, #ccc);
+  }
+
+  a {
+    color: #2ecc71;
+    text-transform: none;
+    font-size: 1.1em;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.3;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .chingu_logo {
+    height: 50px;
+    width: 50px;
+    padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chingu {
+    hr {
+      width: 40%;
+    }
+
+  }
+}

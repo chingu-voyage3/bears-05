@@ -1,0 +1,39 @@
+
+.navigation {
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  z-index: 3;
+
+  ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+
+    li {
+      margin-top: 1em;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .navigation {
+    height: 4em;
+    position: fixed;
+    top: 0;
+
+    ul {
+      display: inline-block;
+      float: right;
+      margin-top: 1.2em;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      li {
+        display: inline;
+        margin: 1em;
+      }
+    }
+  }
+}

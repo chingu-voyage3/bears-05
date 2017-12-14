@@ -8,7 +8,7 @@ import axios from "axios";
 */
 
 
-export default class InTheaters extends Component {
+export default class TvShows extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,9 +18,9 @@ export default class InTheaters extends Component {
 
 
 componentDidMount() {
-  axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&page=1`)
+  axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&page=1`)
     .then(res => {
-      const posts = res.data.results.map(obj => ({title: obj.title, overview: obj.overview, poster: obj.poster_path, vote: obj.vote_average}));
+      const posts = res.data.results.map(obj => ({name: obj.name, overview: obj.overview, poster: obj.poster_path, popularity: obj.popularity}));
       this.setState({ posts });
     });
 }
@@ -28,20 +28,20 @@ componentDidMount() {
 
   render() {
     return (
-      <div class="in_theaters_container">
-      <h1>In Theaters Now</h1>
+      <div class="tv_shows_container">
+      <h1>Popular TV Shows</h1>
       <ul>
         {this.state.posts.map(function(post, index){
           return (
-              <div class="movie_cards" key={index}>
+              <div class="tv_cards" key={index}>
 
-                <h3>{post.title}</h3>
+                <h3>{post.name}</h3>
 
-                <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="Movie Poster" />
+                <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
 
                 <p>{post.overview}</p>
 
-                <h4>Rating: {post.vote}</h4>
+                <h4>Rating: {post.popularity}</h4>
 
               </div>
             )

@@ -1,0 +1,42 @@
+
+.search-box {
+  margin-top: 5em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: block;
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    display: block;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .search-box {
+    height: 3em;
+    width: 50%;
+    margin-bottom: 5em;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 25%;
+  }
+
+  form {
+    display: inline;
+
+    button {
+      display: inline;
+      float: right;
+      margin: 0;
+    }
+  }
+
+}

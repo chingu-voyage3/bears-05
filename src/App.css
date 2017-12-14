@@ -848,16 +848,273 @@ body.noScroll {
 body {
   background: Red; }
 
+h1 {
+  text-align: center; }
+
+.movie_cards {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #34495e;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: auto;
+  text-align: center; }
+  .movie_cards h3 {
+    padding: 1em; }
+  .movie_cards img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em; }
+  .movie_cards p {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    line-height: 1.3; }
+  .movie_cards h4 {
+    padding-bottom: 3em; }
+
+@media (min-width: 1200px) {
+  .in_theaters_container {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    margin-bottom: 10em; }
+    .in_theaters_container .movie_cards {
+      width: 30%;
+      background-color: #34495e;
+      height: 50em;
+      text-align: center;
+      margin: 1em;
+      float: right;
+      border: .5 solid #CDCDCD;
+      box-shadow: 5px 5px 5px black; }
+    .in_theaters_container h1 {
+      margin: 1em; }
+    .in_theaters_container ul {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .in_theaters_container h3 {
+      padding-top: 1.5em; }
+    .in_theaters_container p {
+      padding: 20px;
+      padding-bottom: 0;
+      margin: auto;
+      text-align: left;
+      line-height: 1.5;
+      height: 22em; }
+    .in_theaters_container img {
+      margin: auto;
+      padding-bottom: 0; }
+    .in_theaters_container h4 {
+      padding-top: 1.5em;
+      padding-bottom: 0; } }
+
+.navigation {
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  z-index: 3; }
+  .navigation ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center; }
+    .navigation ul li {
+      margin-top: 1em; }
+
+@media (min-width: 1200px) {
+  .navigation {
+    height: 4em;
+    position: fixed;
+    top: 0; }
+    .navigation ul {
+      display: inline-block;
+      float: right;
+      margin-top: 1.2em;
+      padding-top: 0;
+      padding-bottom: 0; }
+      .navigation ul li {
+        display: inline;
+        margin: 1em; } }
+
+.footer {
+  height: auto;
+  background-color: #222222;
+  clear: both; }
+  .footer ul {
+    text-align: left;
+    padding-top: 3em; }
+    .footer ul li {
+      margin: 1em; }
+  .footer .tmdb_logo {
+    height: 75px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    padding-bottom: 2em; }
+
+@media (min-width: 1200px) {
+  .footer {
+    height: 15em;
+    text-align: center; }
+  ul {
+    display: inline-block; }
+    ul li {
+      display: inline; } }
+
+.search-box {
+  margin-top: 5em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+form {
+  display: block; }
+  form button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    display: block; }
+
+@media (min-width: 1200px) {
+  .search-box {
+    height: 3em;
+    width: 50%;
+    margin-bottom: 5em;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 25%; }
+  form {
+    display: inline; }
+    form button {
+      display: inline;
+      float: right;
+      margin: 0; } }
+
+h1 {
+  text-align: center; }
+
+.tv_cards {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #34495e;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: auto;
+  text-align: center; }
+  .tv_cards h3 {
+    padding: 1em; }
+  .tv_cards img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em; }
+  .tv_cards p {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    line-height: 1.3; }
+  .tv_cards h4 {
+    padding-bottom: 3em; }
+
+@media (min-width: 1200px) {
+  .tv_shows_container {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em; }
+    .tv_shows_container .tv_cards {
+      width: 30%;
+      background-color: #34495e;
+      height: 50em;
+      text-align: center;
+      margin: 1em;
+      float: right;
+      border: .5 solid #CDCDCD;
+      box-shadow: 5px 5px 5px black; }
+    .tv_shows_container h1 {
+      margin: 1em; }
+    .tv_shows_container ul {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .tv_shows_container h3 {
+      padding-top: 1.5em; }
+    .tv_shows_container p {
+      padding: 20px;
+      padding-bottom: 1em;
+      margin: auto;
+      text-align: left;
+      line-height: 1.5;
+      height: 22em; }
+    .tv_shows_container img {
+      margin: auto;
+      padding-bottom: 0; }
+    .tv_shows_container h4 {
+      padding-top: 1.5em;
+      padding-bottom: 0; } }
+
+.landing {
+  width: 100%; }
+
+.theater_background {
+  max-width: 100%; }
+
+.chingu {
+  height: 15em;
+  text-align: center;
+  color: white;
+  background-color: #34495E;
+  margin-top: 5em; }
+  .chingu h4 {
+    color: white;
+    padding: .5em;
+    line-height: 1.3; }
+  .chingu h2 {
+    padding-top: 2em; }
+  .chingu hr {
+    width: 80%;
+    border: 0;
+    height: .5px;
+    background: white;
+    background-image: linear-gradient(to right, #ccc, lightgrey, #ccc); }
+  .chingu a {
+    color: #2ecc71;
+    text-transform: none;
+    font-size: 1.1em;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.3; }
+    .chingu a:hover {
+      color: white; }
+  .chingu .chingu_logo {
+    height: 50px;
+    width: 50px;
+    padding: .5em;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media (min-width: 1200px) {
+  .chingu hr {
+    width: 40%; } }
+
 /*
   font-family: 'Roboto', sans-serif;
   font-family: 'Fjalla One', sans-serif;
   font-family: 'Cantarell', sans-serif;
 */
 body {
-  background-color: ghostwhite; }
+  background-color: snow; }
 
 h1, h2, h3, h4, h5 {
-  color: #83D0F2;
+  color: #2ecc71;
   font-family: 'Fjalla One', sans-serif; }
 
 h1 {
@@ -869,18 +1126,22 @@ h2 {
 h3 {
   font-size: 1.4em; }
 
+h4 {
+  font-size: 1.1em; }
+
 p {
-  color: white;
+  color: #FCFCFC;
   font-size: 1em;
-  font-family: 'Cantarell', sans-serif; }
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 500; }
 
 a {
-  color: #83D0F2;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif; }
   a:hover {
-    color: white; }
+    color: #2ecc71; }
 
 input {
   font-family: 'Roboto', sans-serif; }
@@ -888,12 +1149,12 @@ input {
 button {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #34495e;
-  border: 2px solid #34495e;
+  background-color: #2ecc71;
+  border: 2px solid #2ecc71;
   color: white;
   padding: .8em 1.6em;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px; }
   button:hover {
     background: white;
-    color: #34495e; }
+    color: #2ecc71; }
