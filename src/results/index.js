@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
-class SearchResults extends Component {
+class Results extends Component {
 	render() {
 		return(
-			<div>SearchResults Page</div>
+			<div>Results Page</div>
 		)
 	}
 }
 
-export default SearchResults
+export default Results
