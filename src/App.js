@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import Landing from './landing'
+import Detail from './detail'
+import SearchResults from './results'
 import './App.css';
 import InTheaters from './In_theaters';
 import Navigation from './Navigation';
@@ -10,14 +14,19 @@ import Chingu from './Chingu';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navigation />
-        <Searchbar />
-        <TvShows />
-        <InTheaters />
-        <Chingu />
-        <Footer />
-      </div>
+      <Router>
+        <div>
+          <Route path="/" component={Landing}/>
+          <Route path="/detail" component={Detail}/>
+          <Route path="/results" component={SearchResults}/>
+          <Navigation />
+          <Searchbar />
+          <TvShows />
+          <InTheaters />
+          <Chingu />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
