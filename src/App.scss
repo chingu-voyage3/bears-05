@@ -1,84 +1,15 @@
 @import "./style/Reset.scss";
 @import "./style/Colors.scss";
-@import "./style/In_theaters.scss";
-@import "./style/Navigation.scss";
-@import "./style/Footer.scss";
-@import "./style/Searchbar.scss";
-@import "./style/TV_shows.scss";
-@import "./style/Landing.scss";
-@import "./style/Chingu.scss";
+@import "./style/Typography.scss";
+@import "./style/Global.scss";
+@import "./style/Header.scss";
+@import "./style/Buttons.scss";
+@import "./style/FormElements.scss";
+// @import "./style/In_theaters.scss";
+// @import "./style/Navigation.scss";
+// @import "./style/Footer.scss";
+// @import "./style/Searchbar.scss";
+// @import "./style/TV_shows.scss";
+// @import "./style/Landing.scss";
+// @import "./style/Chingu.scss";
 
-@import url('https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One|Roboto');
-/*
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Fjalla One', sans-serif;
-  font-family: 'Cantarell', sans-serif;
-*/
-
-body {
-  //background-color: #2c3e50;
-  background-color: snow;
-}
-
-h1, h2, h3, h4, h5 {
-  color: #2ecc71;
-  //color: #3498db;
-  //color: #f1c40f;
-  //color: #83D0F2;
-  font-family: 'Fjalla One', sans-serif;
-}
-
-h1 {
-  font-size: 1.8em;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
-h4 {
-  font-size: 1.1em;
-}
-
-p {
-  color: #FCFCFC;
-  font-size: 1em;
-  font-family: 'Cantarell', sans-serif;
-  font-weight: 500;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-
-  &:hover {
-    color: #2ecc71;
-  }
-
-}
-
-input {
-  font-family: 'Roboto', sans-serif;
-}
-
-button {
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #2ecc71;
-  border: 2px solid #2ecc71;
-  color: white;
-  padding: .8em 1.6em;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 10px;
-
-  &:hover {
-    background: white;
-    color: #2ecc71;
-  }
-}

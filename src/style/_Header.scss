@@ -1,0 +1,63 @@
+.mainHeader__navigation {
+    display: flex;
+    margin-left: 1em;
+}
+
+.mainHeader__navigation__logo {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.mainHeader__navigation__links {
+    flex: 1;
+    text-align: right;
+    a {
+        display: inline-block;
+        padding: 1em;
+        font-size: 0.9rem;
+    }
+    a.active {
+        background: black;
+    }
+}
+
+.submenu {
+    background: black;
+    padding: 0.5rem 1rem;
+}
+
+.submenu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submenu li {
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 0.8em;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.searchbar__input {
+    flex: 1;
+    padding: 0 1em;
+    outline: none;
+}
+
+.searchbar__input::placeholder {
+    font-style: italic;
+}
+
+.searchbar__button {
+    padding: 1rem 1.5rem;
+    background: $Secondary;
+    .material-icons {
+        font-size: 2em;
+        color: white;
+    }
+}
