@@ -21,7 +21,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path="/detail" component={Detail}/>
-          <Route path="/results" component={Results}/>
+          <Route path="/results/:query" component={Results}/>
           <Route path="/about" component={About}/>
           <Route path="/discover" component={Discover}/>
           <Route path="/tv" component={TV}/>

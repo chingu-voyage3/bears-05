@@ -18,9 +18,19 @@ Sass
 
 ## Packages  
 node-sass-chokidar  |  https://github.com/michaelwayman/node-sass-chokidar  
-npm-run-all |  https://github.com/mysticatea/npm-run-all
+npm-run-all  |  https://github.com/mysticatea/npm-run-all  
+axios |  https://github.com/axios/axios  
+react-router  |  https://www.npmjs.com/package/react-router
 
 ## Changelog  
+
+### 0.1.0  
+- Added react-router and first set of route statements in App.js
+- Added axios and several different api calls
+- Added several sass files
+- Added header with basic functionality
+
+
 ### 0.0.0  
 - Initial commit
 - Project build with create-react-app

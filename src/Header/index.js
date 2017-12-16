@@ -40,7 +40,7 @@ class Header extends Component {
 					<SubMenu props={props}/> :
 					null
 				}				
-				<Searchbar/>
+				<Searchbar location={this.props.location.pathname}/>
 			</header>
 		)
 	}
