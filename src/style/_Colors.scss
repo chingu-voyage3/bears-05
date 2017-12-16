@@ -1,5 +1,5 @@
-$Primary: Red;
+$Primary: #2C3E50;
+$DarkPrimary: #1D2933;
+$Secondary: #1EAD9B;
 
-body {
-    background: $Primary;
-}
+$PrimaryGradient: linear-gradient(to bottom, $Primary 0%, $DarkPrimary 100%) 

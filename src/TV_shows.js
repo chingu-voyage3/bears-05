@@ -28,12 +28,12 @@ componentDidMount() {
 
   render() {
     return (
-      <div class="tv_shows_container">
+      <div className="tv_shows_container">
       <h1>Popular TV Shows</h1>
       <ul>
         {this.state.posts.map(function(post, index){
           return (
-              <div class="tv_cards" key={index}>
+              <div className="tv_cards" key={index}>
 
                 <h3>{post.name}</h3>
 
