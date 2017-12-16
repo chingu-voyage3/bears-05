@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
 import Header from '../header'
 
-class Landing extends Component {
+class About extends Component {
+	constructor(props) {
+		super(props)
+	}
+
 	render() {
 		return(
 			<div>
 				<Header/>
-				Landing Page
+				About Page
 			</div>
 		)
 	}
 }
 
-export default Landing
+export default About

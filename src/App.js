@@ -3,6 +3,10 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Landing from './landing'
 import Detail from './detail'
 import Results from './results'
+import About from './about'
+import Discover from './discover'
+import TV from './tv'
+import Movies from './movies'
 import './App.css';
 // import InTheaters from './In_theaters';
 // import Navigation from './Navigation';
@@ -18,6 +22,10 @@ class App extends Component {
         <Switch>
           <Route path="/detail" component={Detail}/>
           <Route path="/results" component={Results}/>
+          <Route path="/about" component={About}/>
+          <Route path="/discover" component={Discover}/>
+          <Route path="/tv" component={TV}/>
+          <Route path="/movies" component={Movies}/>
           <Route path="/" component={Landing}/>
           {/* <Navigation />
           <Searchbar />
