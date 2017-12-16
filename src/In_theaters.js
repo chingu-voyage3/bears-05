@@ -28,12 +28,12 @@ componentDidMount() {
 
   render() {
     return (
-      <div class="in_theaters_container">
+      <div className="in_theaters_container">
       <h1>In Theaters Now</h1>
       <ul>
         {this.state.posts.map(function(post, index){
           return (
-              <div class="movie_cards" key={index}>
+              <div className="movie_cards" key={index}>
 
                 <h3>{post.title}</h3>
 

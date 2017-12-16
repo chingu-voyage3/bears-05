@@ -10,7 +10,7 @@ export default class Navigation extends Component {
 
   render() {
     return (
-      <div class="navigation">
+      <div className="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">In Theaters</a></li>
