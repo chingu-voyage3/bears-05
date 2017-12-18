@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Landing from './landing'
-import Detail from './detail'
-import Results from './results'
-import About from './about'
-import Discover from './discover'
-import TV from './tv'
-import Movies from './movies'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Landing from './landing';
+import Detail from './detail';
+import Results from './results';
+import About from './about';
+import Discover from './discover';
+import TV from './tv';
+import Movies from './movies';
 import './App.css';
 // import InTheaters from './In_theaters';
 // import Navigation from './Navigation';
