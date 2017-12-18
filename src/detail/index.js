@@ -23,7 +23,7 @@ class Detail extends Component {
 
 
 	componentDidMount() {
-	  axios.get(`https://api.themoviedb.org/3/search/multi?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&query=justice%26league&page=1&include_adult=false`)
+	  axios.get(`https://api.themoviedb.org/3/search/multi?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&query=the%26matrix&page=1&include_adult=false`)
 	    .then(res => {
 	      const data = res.data.results.map(obj => ({title: obj.title, overview: obj.overview, poster: obj.poster_path, vote: obj.vote_average, release: obj.release_date, type: obj.media_type}));
 	      this.setState({ data });
@@ -49,9 +49,13 @@ class Detail extends Component {
 									<img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" />
 
 									<div className="info">
-										<p>6.8</p>
-										<p>PG-13</p>
+										<div className="rating">
+											<span>{post.vote}</span>
+											<span><i class="material-icons">star_rate</i></span>
+										</div>
+
 										<p>{post.type}</p>
+										<p>{post.release}</p>
 										<p>{post.language}</p>
 										<p>{post.country}</p>
 

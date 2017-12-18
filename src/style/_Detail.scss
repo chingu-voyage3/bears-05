@@ -36,6 +36,22 @@
     color: #1EAD9B;
     width: 40%;
 
+    .rating {
+      padding-bottom: 1em;
+    }
+
+    span {
+      padding-left: 1em;
+      width: 90%;
+
+      i {
+        float: right;
+        position: relative;
+        right: -1em;
+        top: -.4em;
+      }
+    }
+
     p {
       padding-bottom: .3em;
       padding-left: 1em;
