@@ -1,6 +1,11 @@
 
 .details-container {
   height: auto;
+
+  h2 {
+    text-align: center;
+    padding: 1em;
+  }
 }
 
 .result-item:nth-child(even) {
@@ -33,11 +38,19 @@
 
     p {
       padding-bottom: .3em;
+      padding-left: 1em;
       width: 90%;
     }
 
+    .italic {
+      font-style: italic;
+      padding-top: .5em;
+    }
+
     ul li {
-      padding: .2em;
+      padding-top: .2em;
+      padding-bottom: .2em;
+      padding-left: 1em;
     }
 
   }
@@ -53,8 +66,23 @@
 
 @media (min-width: 1200px) {
   .details-container {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .result-item {
+    h3 {
+      text-align: center;
+    }
+    img {
+      float: none;
+
+    }
+  }
+
+  .overview {
+    width: 50%;
+    margin: auto;
   }
 }
