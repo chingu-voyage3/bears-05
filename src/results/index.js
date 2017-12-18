@@ -1,33 +1,34 @@
 import React, { Component } from 'react'
 import Header from '../header'
-import {Link} from 'react-router-dom'
 import {getSearchResults} from '../api'
-
-let searchResults
-let query
+import List from './list'
 
 class Results extends Component {
 	constructor(props) {
 		super(props)
+		this.state = {
+			query: this.props.match.params.query,
+			result: null,
+			error: false
+		}
 	}
 
 	componentWillMount() {
-		query = this.props.match.params.query
-		query ? 
-			getSearchResults(query).then(function(response) {
-				console.log(response)
-			}).catch(function(err) {
-				console.log("error")
+		getSearchResults(this.state.query).then(function(response) {
+			this.setState({result: response})
+		}.bind(this)).catch(function(err) {
+			this.setState({
+				result: "There was a problem loading the results. Please try again.",
+				error: true
 			})
-		:
-		null
+		}.bind(this))
 	}
 
 	render() {
 		return(
 			<div>
 				<Header/>
-				<h4>Search results for ""</h4>
+					<List list={this.state.result} iserror={this.state.error} query={this.state.query}/>
 			</div>
 		)
 	}
