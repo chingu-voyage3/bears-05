@@ -8,12 +8,20 @@ class About extends Component {
 		this.state = {
 			email: "",
 			name: "",
-			message: ""
+			message: "",
+			member: null
 		}
 
 		this.handleMessage = this.handleMessage.bind(this)
 		this.handleEmail = this.handleEmail.bind(this)
 		this.handleName = this.handleName.bind(this)
+		this.handleSelectMember = this.handleSelectMember.bind(this)
+	}
+
+	handleSelectMember(event, member) {
+		this.setState({
+			member: member
+		})
 	}
 
 	handleEmail(event) {
@@ -33,8 +41,12 @@ class About extends Component {
 	}
 
 	render() {
-
 		let Props = {
+			selectMember: {
+				options: ["Travis", "Nick", "Josh", "Matt"],
+				name: this.state.member,
+				method: this.handleSelectMember
+			},
 			email: {
 				name: "email",
 				method: this.handleEmail,
@@ -48,7 +60,6 @@ class About extends Component {
 				type: "text"
 			}
 		}
-
 		return(
 			<div>
 				<Header/>

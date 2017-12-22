@@ -52,3 +52,49 @@
 // Textarea Elements
 
 // Select Elements
+
+.select {
+  position: relative;
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+.select label {
+  border-bottom: 2px solid $Secondary;
+  width: 100%;
+  display: block;
+  color: $Secondary;
+  line-height: 2em;
+  &:after {
+    position: relative;
+    top: 14px;
+    content: "";
+    display: block;
+    float: right;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid $Secondary;
+  }
+}
+
+.select ul {
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 0%;
+  height: 0px;
+  top: -2px;
+  z-index: 1;
+  background: $Secondary;
+  box-shadow: 0 0 20px 0px $DarkPrimary;
+  transition: opacity 0.2s, width 0.2s, height 0.2s;
+}
+
+.select li {
+  padding: 0.5em 1em;
+  &:hover {
+    background-color: $Primary;
+  }
+}
