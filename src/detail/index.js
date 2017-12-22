@@ -5,7 +5,6 @@ import axios from 'axios';
 import Footer from '../Footer.js';
 import Searchbar from '../header/searchbar.js';
 import List from '../results/list';
-import {getSearchResults} from '../api';
 import {getDetails} from '../api/getDetails';
 
 
@@ -22,11 +21,7 @@ class Detail extends Component {
 	componentWillMount() {
 		getDetails(this.state.id).then(function(response){
 			this.setState({result: response});
-			console.log(response.data.original_title);
-			console.log(response.data.homepage);
-			console.log(response.data.popularity);
-			console.log(response.data.release_data);
-			console.log(response.data.overview);
+			//console.log(response.data.original_title);
 		}.bind(this)).catch(function(err) {
 			this.setState({
 				result:"There was a problem loading the results. Please try again.",
@@ -34,6 +29,7 @@ class Detail extends Component {
 			})
 		}.bind(this))
 	}
+
 
 	render() {
 		return(
@@ -44,6 +40,7 @@ class Detail extends Component {
 
 				<h2>Details: </h2>
 
+				<List list={this.state.result} iserror={this.state.error} query={this.state.query}/>
 
 			 </div>
 			</div>
