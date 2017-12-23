@@ -16,7 +16,7 @@ class Header extends Component {
 		let location = this.props.location.pathname.slice(1)
 		let showSubmenu = location === "movies" ?
 			true :
-			location === "tv" ?
+			location === "tv/airing_today" ?
 			true :
 			false
 		let props = {
