@@ -10,7 +10,7 @@ const List = (props) => {
     list = props.list.data.results.map((item, i) => {
       if(item.media_type === "movie") {
         return(
-          <Link to={"/detail/" + item.id} key={i} className="item">
+          <Link to={"/detail/" +item.media_type+"/" + item.id} key={i} className="item">
             <div className="item__titleLine">
               <li>{item.title}</li>
               <i className="material-icons">movie</i>
@@ -21,7 +21,7 @@ const List = (props) => {
         )
       } else if(item.media_type === "tv") {
         return(
-          <Link to={"/detail/" + item.id} key={i} className="item">
+          <Link to={"/detail/" +item.media_type+"/" + item.id} key={i} className="item">
             <div className="item__titleLine">
               <li key={i}>{item.name}</li>
               <i className="material-icons">tv</i>
@@ -32,7 +32,7 @@ const List = (props) => {
         )
       } else {
         return(
-          <Link to={"/detail/" + item.id} key={i} className="item">
+          <Link to={"/detail/" +item.media_type+"/" + item.id} key={i} className="item">
             <div className="item__titleLine">
               <li key={i}>{item.name}</li>
               <i className="material-icons">person</i>

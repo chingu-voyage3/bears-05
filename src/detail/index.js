@@ -23,14 +23,17 @@ class Detail extends Component {
 
 
 	componentDidMount() {
-	  axios.get(`https://api.themoviedb.org/3/search/multi?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US&query=the%26matrix&page=1&include_adult=false`)
+	  axios.get(`https://api.themoviedb.org/3/`+this.props.match.params.type+`/`+this.props.match.params.id+`?api_key=03b9a40695aae1f4e99a42e90e012e9e&language=en-US`)
 	    .then(res => {
-	      const data = res.data.results.map(obj => ({title: obj.title, overview: obj.overview, poster: obj.poster_path, vote: obj.vote_average, release: obj.release_date, type: obj.media_type}));
+	      console.log(res)
+				const data = {title: res.data.name, overview: res.data.overview, poster: res.data.poster_path, vote: res.data.vote_average,
+					 release: res.data.release_date, type: res.data.media_type};
 	      this.setState({ data });
 	    });
 	}
 
 	render() {
+	  const post = this.state.data
 		return(
 			<div>
 				<Header/>
@@ -40,49 +43,41 @@ class Detail extends Component {
 				<h2>Search Results: </h2>
 
 				<ul>
-					{this.state.data.map(function(post, index){
-						return (
-								<div className="result-item" key={index}>
+					<div className="result-item">
 
-									<h3>{post.title}</h3>
+						<h3>{post.title}</h3>
 
-									<img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" />
+						<img src={"https://image.tmdb.org/t/p/w300/" + post.poster} alt="Movie Poster" />
 
-									<div className="info">
-										<div className="rating">
-											<span>{post.vote}</span>
-											<span><i class="material-icons">star_rate</i></span>
-										</div>
+						<div className="info">
+							<div className="rating">
+								<span>{post.vote}</span>
+								<span><i class="material-icons">star_rate</i></span>
+							</div>
 
-										<p>{post.type}</p>
-										<p>{post.release}</p>
-										<p>{post.language}</p>
-										<p>{post.country}</p>
+							<p>{post.type}</p>
+							<p>{post.release}</p>
+							<p>{post.language}</p>
+							<p>{post.country}</p>
 
-										<p class="italic">Directed by:</p>
-										<p>Zack Snyder</p>
+							<p class="italic">Directed by:</p>
+							<p>Zack Snyder</p>
 
-										<p class="italic">Written by:</p>
-										<p>Chris Terrio</p>
+							<p class="italic">Written by:</p>
+							<p>Chris Terrio</p>
 
-										<p class="italic">Starring:</p>
-										<ul>
-											<li>Ben Affleck</li>
-											<li>Henry Cavil</li>
-											<li>Amy Adams</li>
-											<li>Gal Gadot</li>
-											<li>Ezra Miller</li>
-										</ul>
-									</div>
+							<p class="italic">Starring:</p>
+							<ul>
+								<li>Ben Affleck</li>
+								<li>Henry Cavil</li>
+								<li>Amy Adams</li>
+								<li>Gal Gadot</li>
+								<li>Ezra Miller</li>
+							</ul>
+						</div>
 
-									<p className="overview">{post.overview}</p>
-
-
-
-								</div>
-							)
-						}
-					)}
+						<p className="overview">{post.overview}</p>
+					</div>
 				</ul>
 			 </div>
 			</div>
