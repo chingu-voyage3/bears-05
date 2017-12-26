@@ -20,11 +20,11 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/detail/:id" component={Detail}/>
+          <Route path="/detail/:type/:id" component={Detail}/>
           <Route path="/results/:query" component={Results}/>
           <Route path="/about" component={About}/>
           <Route path="/discover" component={Discover}/>
-          <Route path="/tv" component={TV}/>
+          <Route path="/tv/:name" component={TV}/>
           <Route path="/movies" component={Movies}/>
           <Route path="/" component={Landing}/>
           {/* <Navigation />
