@@ -1,4 +1,4 @@
 import { getSearchResults } from './getSearchResults'
-import { getDetails } from './getDetails'
+import { getMovieDetails } from './getMovieDetails'
 
-export { getSearchResults, getDetails }
+export { getSearchResults, getMovieDetails }

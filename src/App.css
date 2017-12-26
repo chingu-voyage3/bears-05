@@ -58,6 +58,9 @@ i.material-icons {
 label {
   text-transform: capitalize; }
 
+img {
+  display: block; }
+
 body, p {
   color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -337,3 +340,53 @@ body {
   .overview {
     width: 50%;
     margin: auto; } }
+
+.movieTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5em; }
+
+.imageContainer {
+  width: 100%;
+  background: #2C3E50;
+  margin-left: -1em;
+  padding: 0 1em;
+  display: flex;
+  margin-bottom: 1em; }
+
+.vitalInfo {
+  padding: 0.25em 0 0.25em 0.25em; }
+  .vitalInfo p {
+    font-size: 0.9em;
+    color: #1EAD9B;
+    font-style: italic;
+    margin-bottom: 0.5em; }
+
+.vitalInfo__ranking i {
+  display: inline-block;
+  font-size: 1.35em;
+  position: relative;
+  top: 3px;
+  left: 0.75em; }
+
+.movieOverview {
+  color: lightgray;
+  margin-bottom: 1em; }
+
+.castImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.castImages__member {
+  background: lightgray;
+  padding: 0.5em;
+  max-width: 70px;
+  margin-right: 0.5em;
+  margin-bottom: 1em; }
+
+.castImages__member__pic {
+  margin: 0 auto 0.5em auto;
+  max-width: 100%; }
+
+.castImages__member__name {
+  color: #1D2933; }

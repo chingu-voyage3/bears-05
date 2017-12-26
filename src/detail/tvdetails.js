@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const DetailPage = (props) => {
+const TvDetails = (props) => {
 
   console.log(props)
 
@@ -55,4 +55,4 @@ const DetailPage = (props) => {
   )
 }
 
-export default DetailPage
+export default TvDetails
