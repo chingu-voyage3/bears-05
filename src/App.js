@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/results/:query" component={Results}/>
           <Route path="/about" component={About}/>
           <Route path="/discover" component={Discover}/>
-          <Route path="/tv" component={TV}/>
+          <Route path="/tv/:name" component={TV}/>
           <Route path="/movies" component={Movies}/>
           <Route path="/" component={Landing}/>
           {/* <Navigation />
