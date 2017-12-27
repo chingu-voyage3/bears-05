@@ -36,13 +36,9 @@ class TV extends Component {
 		              <div className="tv_cards" >
 
 		                <h3>{post.name}</h3>
-
-		                <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
-
-		                <p>{post.overview}</p>
-
-		                <h4>Rating: {post.popularity}</h4>
-
+                    <div>
+		                  <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
+										</div>
 		              </div>
 								</Link>
 		            )

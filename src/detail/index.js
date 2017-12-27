@@ -56,8 +56,22 @@ class Detail extends Component {
 				})
 			}.bind(this))
 
-		} else {
+		} else if(this.state.type === "person") {
+			getMovieDetails(this.state.type, this.state.id).then(function(response){
+				this.setState({
+					person: {
+						basic: response.basic,
+						cast: response.cast
+					}
+				});
 
+			}.bind(this)).catch(function(err) {
+				this.setState({
+
+					result:"There was a problem loading the results. Please try again.",
+					error: true
+				})
+			}.bind(this))
 		}
 	}
 

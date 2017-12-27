@@ -284,18 +284,11 @@ h1 {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-.tv_detail :nth-child(even) {
-  background-color: #2c3e50; }
-
-.tv_detail :nth-child(odd) {
-  background-color: #34495e; }
-
 .tv_cards {
-  width: 100%;
+  width: 35%;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #34495e;
-  height: auto;
+  margin-right: 35%;
+  height: 90%;
   text-align: center; }
   .tv_cards img {
     margin-left: auto;
@@ -321,14 +314,14 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10em; }
-    .tv_shows_container .tv_details {
+    .tv_shows_container .tv_detail {
       width: 100%;
       height: 100%; }
     .tv_shows_container .tv_cards {
       position: relative;
       width: 30%;
       background-color: #34495e;
-      height: 50em;
+      height: 25em;
       text-align: center;
       margin: 1em;
       float: right;
@@ -341,7 +334,8 @@ h1 {
       margin-left: auto;
       margin-right: auto; }
     .tv_shows_container h3 {
-      padding-top: 1.5em; }
+      padding-top: 1.5em;
+      padding-left: 0; }
     .tv_shows_container p {
       padding: 20px;
       padding-bottom: 1em;
