@@ -5,6 +5,11 @@ const PersonDetails = (props) => {
 
   console.log(props)
 
+  let basic = props.props.basic.data
+
+
+
+
   // let list = null
   // if(props.list !== null) {
   //   list = props.list.data.results.map((item, i) => {
@@ -44,13 +49,18 @@ const PersonDetails = (props) => {
   //     }
   //   })
   // }
-
   return(
     <div className="content">
-      {/* <h4 className="showQuery">Results for "{props.query}"</h4> */}
-      <div className="pagination">Pagination...</div>
-      {/* {list} */}
-      <div className="pagination">Pagination...</div>
+      <h2 className="movieTitle">{basic.title}</h2>
+      <div className="imageContainer">
+        <img src={"https://image.tmdb.org/t/p/w640/" + basic.profile_path}/>
+        <section className="vitalInfo">
+          <p className="vitalInfo__ranking">{basic.popularity}<i className="material-icons">star</i></p>
+        </section>
+      </div>
+      <p className="movieOverview">
+        {basic.biography}
+      </p>
     </div>
   )
 }

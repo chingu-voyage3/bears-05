@@ -16,6 +16,31 @@ const MovieDetails = (props) => {
       )
     }
   })
+  function Crew(props){
+    if(cast.crew.length >=1){  //confirms crew credits exist
+      return cast.crew.map((member, i)=>{
+        if (i < 3){           //controls number of crew credits displayed
+          return (
+            <p className="vitalInfo__crew">{member.job}: {member.name}</p>
+          )
+        }
+      })
+    }
+    else {return null}
+  }
+
+  function Cast(props){
+    if(cast.cast.length >=1){  //confirms cast credits exist
+      var castArr = []
+      cast.cast.map((member, i)=>{
+        if (i < 5){           //controls number of cast credits displayed
+          castArr.push(member.name)
+        }
+      })
+      return (<p>Starring: {castArr.join(', ')}</p>)
+    }
+    else {return null}
+  }
 
   return(
     <div className="content">
@@ -25,9 +50,8 @@ const MovieDetails = (props) => {
         <section className="vitalInfo">
           <p className="vitalInfo__ranking">{basic.vote_average}<i className="material-icons">star</i></p>
           <p className="vitalInfo__runtime">{basic.runtime} min</p>
-          <p className="vitalInfo__producer">{cast.crew[0].job}: {cast.crew[0].name}</p>
-          <p className="vitalInfo__director">{cast.crew[1].job}: {cast.crew[1].name}</p>
-          <p className="vitalInfo__cast">Starring: {cast.cast[0].name}, {cast.cast[1].name}, {cast.cast[2].name}, {cast.cast[3].name}</p>
+          <Crew/>
+          <Cast/>
         </section>
       </div>
       <p className="movieOverview">
