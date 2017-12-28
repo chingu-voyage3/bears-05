@@ -32,19 +32,15 @@ class TV extends Component {
 		      <ul>
 		        {this.state.posts.map(function(post, index){
 		          return (
-									<Link className= "detail" to={"/detail/tv/"+ post.id}>
-			              <div className="result-item" key={index}>
+								<Link className= "tv_detail" key={index} to={"/detail/tv/"+ post.id}>
+		              <div className="tv_cards" >
 
-			                <h3>{post.name}</h3>
-
-			                <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
-
-			                <p>{post.overview}</p>
-
-			                <h4>Rating: {post.popularity}</h4>
-
-			              </div>
-									</Link>
+		                <h3>{post.name}</h3>
+                    <div>
+		                  <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
+										</div>
+		              </div>
+								</Link>
 		            )
 		          }
 		        )}

@@ -275,6 +275,88 @@ body {
   text-overflow: ellipsis;
   font-size: 0.9em; }
 
+<<<<<<< HEAD
+=======
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.tv_detail {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.tv_cards {
+  width: 35%;
+  margin-left: auto;
+  margin-right: 35%;
+  height: 90%;
+  text-align: center; }
+  .tv_cards img {
+    margin-left: auto;
+    margin-right: auto; }
+  .tv_cards p {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    line-height: 1.3; }
+  .tv_cards h3 {
+    padding-bottom: 1em;
+    padding-top: 1em; }
+  .tv_cards h4 {
+    padding-bottom: .5em;
+    padding-top: .5em;
+    margin-top: auto; }
+
+@media (min-width: 1200px) {
+  .tv_shows_container {
+    display: inline-block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em; }
+    .tv_shows_container .tv_detail {
+      width: 100%;
+      height: 100%; }
+    .tv_shows_container .tv_cards {
+      position: relative;
+      width: 30%;
+      background-color: #34495e;
+      height: 25em;
+      text-align: center;
+      margin: 1em;
+      float: right;
+      border: .5 solid #CDCDCD;
+      box-shadow: 5px 5px 5px black; }
+    .tv_shows_container h1 {
+      margin: 1em; }
+    .tv_shows_container ul {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .tv_shows_container h3 {
+      padding-top: 1.5em;
+      padding-left: 0; }
+    .tv_shows_container p {
+      padding: 20px;
+      padding-bottom: 1em;
+      margin: auto;
+      text-align: left;
+      line-height: 1.5;
+      height: 22em; }
+    .tv_shows_container img {
+      margin: auto;
+      padding-bottom: 0; }
+    .tv_shows_container h4 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-top: .75em;
+      padding-bottom: .75em;
+      margin-bottom: 1em; } }
+
+>>>>>>> 802bcb2e167a11f61f1156ec0b1323d93dfa7e51
 .details-container {
   height: auto; }
   .details-container h2 {

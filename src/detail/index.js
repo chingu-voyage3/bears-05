@@ -31,7 +31,7 @@ class Detail extends Component {
 						cast: response.cast
 					}
 				});
-				
+
 			}.bind(this)).catch(function(err) {
 				this.setState({
 
@@ -40,9 +40,38 @@ class Detail extends Component {
 				})
 			}.bind(this))
 		} else if(this.state.type === "tv") {
+			getMovieDetails(this.state.type, this.state.id).then(function(response){
+				this.setState({
+					tv: {
+						basic: response.basic,
+						cast: response.cast
+					}
+				});
 
-		} else {
+			}.bind(this)).catch(function(err) {
+				this.setState({
 
+					result:"There was a problem loading the results. Please try again.",
+					error: true
+				})
+			}.bind(this))
+
+		} else if(this.state.type === "person") {
+			getMovieDetails(this.state.type, this.state.id).then(function(response){
+				this.setState({
+					person: {
+						basic: response.basic,
+						cast: response.cast
+					}
+				});
+
+			}.bind(this)).catch(function(err) {
+				this.setState({
+
+					result:"There was a problem loading the results. Please try again.",
+					error: true
+				})
+			}.bind(this))
 		}
 	}
 
