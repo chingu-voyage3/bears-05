@@ -227,6 +227,120 @@ body {
   .select li:hover {
     background-color: #2C3E50; }
 
+.showQuery {
+  margin-bottom: 0.5em; }
+
+.pagination {
+  background: black;
+  padding: 0.25em 1em;
+  margin: 0 -1em 0.5em -1em; }
+
+.item {
+  display: block;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #1EAD9B; }
+  .item:nth-last-child(2) {
+    border-bottom: none;
+    padding-bottom: none;
+    margin-bottom: none; }
+
+.item__titleLine {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em; }
+  .item__titleLine li {
+    list-style-type: none;
+    color: white; }
+  .item__titleLine .material-icons {
+    font-size: 1rem;
+    margin: 0 0 0 1em;
+    color: white; }
+
+.item__info {
+  color: #1EAD9B;
+  margin-bottom: 0.25em;
+  font-size: 1em; }
+  .item__info i {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: 2px;
+    font-size: 1.15em; }
+
+.item__overview {
+  color: rgba(255, 255, 255, 0.5);
+  max-height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em; }
+
+.details-container {
+  height: auto; }
+  .details-container h2 {
+    text-align: center;
+    padding: 1em; }
+
+.result-item:nth-child(even) {
+  background-color: #2c3e50; }
+
+.result-item:nth-child(odd) {
+  background-color: #34495e; }
+
+.result-item {
+  padding-left: 1em;
+  padding-right: 1em; }
+  .result-item img {
+    float: left;
+    max-width: 60%; }
+  .result-item h3 {
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-bottom: .5em; }
+  .result-item .info {
+    float: right;
+    color: #1EAD9B;
+    width: 40%; }
+    .result-item .info .rating {
+      padding-bottom: 1em; }
+    .result-item .info span {
+      padding-left: 1em;
+      width: 90%; }
+      .result-item .info span i {
+        float: right;
+        position: relative;
+        right: -1em;
+        top: -.4em; }
+    .result-item .info p {
+      padding-bottom: .3em;
+      padding-left: 1em;
+      width: 90%; }
+    .result-item .info .italic {
+      font-style: italic;
+      padding-top: .5em; }
+    .result-item .info ul li {
+      padding-top: .2em;
+      padding-bottom: .2em;
+      padding-left: 1em; }
+  .result-item .overview {
+    padding-top: 1em;
+    line-height: 1.4;
+    clear: both;
+    padding-bottom: 5em; }
+
+@media (min-width: 1200px) {
+  .details-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .result-item h3 {
+    text-align: center; }
+  .result-item img {
+    float: none; }
+  .overview {
+    width: 50%;
+    margin: auto; } }
+
 .movieTitle {
   font-size: 1.25rem;
   margin-bottom: 0.5em; }
