@@ -29,7 +29,7 @@ class TV extends Component {
 				<Header/>
 				<div className="tv_shows_container">
 		      <h1>{this.state.heading}</h1>
-		      <ul>
+		      <ul className="flcontainer">
 		        {this.state.posts.map(function(post, index){
 		          return (
 								<Link className= "tv_detail" key={index} to={"/detail/tv/"+ post.id}>
