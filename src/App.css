@@ -282,14 +282,14 @@ h1 {
 
 .flcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-content: space-between; }
 
 .tv_detail {
   margin-top: 1em;
   margin-bottom: 1em;
-  flex-basis: 50%; }
+  flex-basis: 40%; }
 
 .tv_cards {
   width: 100%;
