@@ -34,10 +34,9 @@ class TV extends Component {
 		          return (
 								<Link className= "tv_detail" key={index} to={"/detail/tv/"+ post.id}>
 		              <div className="tv_cards" >
-
-		                <h3>{post.name}</h3>
-                    <div>
+                    <div className="img_title">
 		                  <img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
+                      <h3>{post.name}</h3>
 										</div>
 		              </div>
 								</Link>
