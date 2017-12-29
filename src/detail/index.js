@@ -21,7 +21,7 @@ class Detail extends Component {
 	componentWillMount() {
 		getDetails(this.state.id).then(function(response){
 			this.setState({result: response});
-			//console.log(response.data.original_title);
+			console.log(response.data.original_title);
 		}.bind(this)).catch(function(err) {
 			this.setState({
 				result:"There was a problem loading the results. Please try again.",
