@@ -14,7 +14,7 @@ h1 {
 .tv_detail{
   margin-top: 1em;
   margin-bottom: 1em;
-  flex-basis: 40%;
+  flex-basis: 25%;
 }
 
 
@@ -25,11 +25,12 @@ h1 {
   width: 100%;
   margin-left: auto;
   margin-right: 35%;
-  padding-bottom: 3.5em;
+  padding-bottom: 2em;
   padding-top: .5em;
   height: 90%;
   position: relative;
   text-align: center;
+  overflow: hidden;
 
 
 
@@ -38,6 +39,11 @@ h1 {
     margin-right: auto;
     width: 185px;
     height: 278px;
+
+    .img {
+      width: 185px;
+      height: 278px;
+    }
   }
 
   p {
@@ -49,8 +55,7 @@ h1 {
   }
 
   h3 {
-    padding-bottom: 1em;
-    padding-top: .7em;
+    padding-bottom: .5em;
     line-height: 1em;
     z-index: 10;
   }
