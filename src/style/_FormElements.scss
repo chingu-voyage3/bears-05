@@ -90,6 +90,8 @@
   background: $Secondary;
   box-shadow: 0 0 20px 0px $DarkPrimary;
   transition: opacity 0.2s, width 0.2s, height 0.2s;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 .select li {
