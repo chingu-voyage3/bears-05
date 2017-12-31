@@ -275,8 +275,6 @@ body {
   text-overflow: ellipsis;
   font-size: 0.9em; }
 
-<<<<<<< HEAD
-=======
 h1 {
   text-align: center;
   margin-top: 1em;
@@ -356,7 +354,6 @@ h1 {
       padding-bottom: .75em;
       margin-bottom: 1em; } }
 
->>>>>>> 802bcb2e167a11f61f1156ec0b1323d93dfa7e51
 .details-container {
   height: auto; }
   .details-container h2 {
