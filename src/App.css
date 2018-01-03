@@ -129,6 +129,9 @@ body {
   padding-left: 1rem;
   font-size: 0.8em; }
 
+.submenu li.active {
+  color: #1EAD9B; }
+
 .searchbar {
   display: flex; }
 

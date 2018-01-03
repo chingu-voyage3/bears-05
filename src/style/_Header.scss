@@ -41,6 +41,10 @@
     font-size: 0.8em;
 }
 
+.submenu li.active {
+    color: $Secondary;
+}
+
 .searchbar {
     display: flex;
 }
