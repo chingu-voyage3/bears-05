@@ -17,7 +17,7 @@ class Header extends Component {
 		let location = this.props.location.pathname.slice(1)
 		let showSubmenu = location === "movies" ?
 			true :
-			location === "tv/airing_today" ?
+			location === "tv" ?
 			true :
 			false
 		let props = {
@@ -38,7 +38,7 @@ class Header extends Component {
 				</nav>
 				{
 					showSubmenu ?
-					<SubMenu switchListing={this.props.props} active={this.props.active}/> :
+					<SubMenu switchListing={this.props.props} active={this.props.active} loc={location}/> :
 					null
 				}
 				<Searchbar location={this.props.location.pathname}/>

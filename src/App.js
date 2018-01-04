@@ -8,12 +8,6 @@ import Discover from './discover';
 import TV from './tv';
 import Movies from './movies';
 import './App.css';
-// import InTheaters from './In_theaters';
-// import Navigation from './Navigation';
-// import Footer from './Footer';
-// import Searchbar from './Searchbar';
-// import TvShows from './TV_shows';
-// import Chingu from './Chingu';
 
 class App extends Component {
   render() {
@@ -24,15 +18,9 @@ class App extends Component {
           <Route path="/results/:query" component={Results}/>
           <Route path="/about" component={About}/>
           <Route path="/discover" component={Discover}/>
-          <Route path="/tv/:name" component={TV}/>
+          <Route path="/tv" component={TV}/>
           <Route path="/movies" component={Movies}/>
           <Route path="/" component={Landing}/>
-          {/* <Navigation />
-          <Searchbar />
-          <TvShows />
-          <InTheaters />
-          <Chingu />
-          <Footer /> */}
         </Switch>
       </Router>
     );

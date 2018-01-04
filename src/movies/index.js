@@ -6,6 +6,7 @@ import NowPlaying from './nowplaying'
 import ComingSoon from './comingsoon'
 import Popular from './popular'
 import { getMovieListing } from '../api'
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class Movies extends Component {
 	constructor(props) {
@@ -49,13 +50,20 @@ class Movies extends Component {
 		return (
 			<div>
 				<Header props={this.switchListing} active={this.state.active}/>
-				{
-				this.state.active === "nowplaying" ?
-				<NowPlaying props={this.state.result}/> :
-				this.state.active === "comingsoon" ?
-				<ComingSoon props={this.state.result}/> :
-				<Popular props={this.state.result}/>
-				}
+				<div className="pin">
+					<CSSTransitionGroup
+						transitionName="slide"
+						transitionEnterTimeout={500}
+						transitionLeaveTimeout={300}>
+						{
+						this.state.active === "nowplaying" ?
+						<NowPlaying key="0" props={this.state.result}/> :
+						this.state.active === "comingsoon" ?
+						<ComingSoon key="1" props={this.state.result}/> :
+						<Popular key="2" props={this.state.result}/>
+						}
+					</CSSTransitionGroup>
+				</div>
 			</div>
 		)
 	}

@@ -404,12 +404,37 @@ h1 {
       margin: auto;
       padding-bottom: 0; }
     .tv_shows_container h4 {
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width: 100%;
       padding-top: .75em;
       padding-bottom: .75em;
       margin-bottom: 1em; } }
+
+.pin {
+  position: relative; }
+
+.slide-enter {
+  position: absolute;
+  margin-left: -100px;
+  opacity: 0.01; }
+
+.slide-enter.slide-enter-active {
+  margin-left: 0px;
+  opacity: 1;
+  transition: opacity 500ms ease-out, margin-left 500ms ease-out; }
+
+.slide-leave {
+  z-index: -1;
+  position: absolute;
+  margin-left: 0px;
+  top: 0%;
+  opacity: 1; }
+
+.slide-leave.slide-leave-active {
+  opacity: 0.01;
+  margin-left: 100px;
+  transition: opacity 300ms ease-out, margin-left 300ms ease-out; }
 
 .details-container {
   height: auto; }

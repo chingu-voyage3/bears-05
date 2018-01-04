@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 const nowplaying = (props) => {
 
-  console.log(props.props)
-
   let listing
 
   props.props !== [] ?
