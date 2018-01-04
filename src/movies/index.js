@@ -1,55 +1,72 @@
 import React, { Component } from 'react'
-import axios from "axios";
 import {withRouter, Link} from 'react-router-dom'
 import Header from '../header'
 import callSwitch from './conditionals.js'
-
+import NowPlaying from './nowplaying'
+import ComingSoon from './comingsoon'
+import Popular from './popular'
+import { getMovieListing } from '../api'
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class Movies extends Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
-			posts: [],
-			apiQuery: this.props.match.params.category,
+			active: "nowplaying",
+			error: false,
+			result: []
 		}
+		this.switchListing = this.switchListing.bind(this)
 	}
-
-
 
 	componentDidMount() {
-		axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=03b9a40695aae1f4e99a42e90e012e9e&`+callSwitch(this.state.apiQuery)+`language=en-US&page=1`)
-			.then(res => {
-				const posts = res.data.results.map(obj => ({name: obj.title, overview: obj.overview, poster: obj.poster_path, popularity: obj.popularity, id: obj.id}));
-				this.setState({ posts });
-			});
+		getMovieListing(this.state.active).then(function(response) {
+			this.setState({
+				result: response.data.results
+			})
+		}.bind(this)).catch(function(err) {
+			this.setState({
+				result: "There was a problem loading the results. Please try again.",
+				error: true
+			})
+		}.bind(this))
 	}
 
+	switchListing(active) {
+		getMovieListing(active).then(function(response) {
+			this.setState({
+				active: active,
+				result: response.data.results
+			})
+		}.bind(this)).catch(function(err) {
+			this.setState({
+				result: "There was a problem loading the results. Please try again.",
+				error: true
+			})
+		}.bind(this))
+	}
 
 	render() {
 		return (
-
-		<div>
-			<Header/>
-			<div className="tv_shows_container">
-				<ul className="flcontainer">
-					{this.state.posts.map(function(post, index){
-						return (
-							<Link className= "tv_detail" key={index} to={"/detail/movie/"+ post.id}>
-								<div className="tv_cards" >
-									<div className="img_title">
-										<h3>{post.name}</h3>
-										<img src={"https://image.tmdb.org/t/p/w185/" + post.poster} alt="TV Poster" />
-									</div>
-								</div>
-							</Link>
-							)
+			<div>
+				<Header props={this.switchListing} active={this.state.active}/>
+				<div className="pin">
+					<CSSTransitionGroup
+						transitionName="slide"
+						transitionEnterTimeout={500}
+						transitionLeaveTimeout={300}>
+						{
+						this.state.active === "nowplaying" ?
+						<NowPlaying key="0" props={this.state.result}/> :
+						this.state.active === "comingsoon" ?
+						<ComingSoon key="1" props={this.state.result}/> :
+						<Popular key="2" props={this.state.result}/>
 						}
-					)}
-				</ul>
+					</CSSTransitionGroup>
+				</div>
 			</div>
-		</div>
 		)
 	}
-	}
+}
 
 export default Movies

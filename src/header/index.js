@@ -13,10 +13,11 @@ class Header extends Component {
 	}
 
 	render() {
+
 		let location = this.props.location.pathname.slice(1)
-		let showSubmenu = location === "movies/now_playing" ?
+		let showSubmenu = location === "movies" ?
 			true :
-			location === "tv/airing_today" ?
+			location === "tv" ?
 			true :
 			false
 		let props = {
@@ -29,15 +30,15 @@ class Header extends Component {
 						<img src=""/>
 					</Link>
 					<ul className="mainHeader__navigation__links">
-						<Link className={location === "movies" ? "active" : null} to="/movies/now_playing">Movies</Link>
-						<Link className={location === "tv" ? "active" : null} to="/tv/airing_today">TV</Link>
+						<Link className={location === "movies" ? "active" : null} to="/movies">Movies</Link>
+						<Link className={location === "tv" ? "active" : null} to="/tv">TV</Link>
 						<Link className={location === "discover" ? "active" : null} to="/discover">Discover</Link>
 						<Link className={location === "about" ? "active" : null} to="/about">About</Link>
 					</ul>
 				</nav>
 				{
 					showSubmenu ?
-					<SubMenu props={props}/> :
+					<SubMenu switchListing={this.props.props} active={this.props.active} loc={location}/> :
 					null
 				}
 				<Searchbar location={this.props.location.pathname}/>
