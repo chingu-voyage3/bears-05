@@ -20,7 +20,8 @@ Sass
 node-sass-chokidar  |  https://github.com/michaelwayman/node-sass-chokidar  
 npm-run-all  |  https://github.com/mysticatea/npm-run-all  
 axios |  https://github.com/axios/axios  
-react-router  |  https://www.npmjs.com/package/react-router
+react-router  |  https://www.npmjs.com/package/react-router  
+react-transition-group  |  https://github.com/reactjs/react-transition-group/tree/v1-stable
 
 ## Changelog  
 
