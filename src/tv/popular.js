@@ -11,8 +11,10 @@ const popular = (props) => {
   listing = props.props.map((show, i) => {
     return(
       <div key={i} className="content">
-        <p>{show.name}</p>
-        <img src={"https://image.tmdb.org/t/p/w150/" + show.poster_path}/>
+        <Link to={"/detail/tv/" + show.id}>
+          <p>{show.name}</p>
+          <img src={"https://image.tmdb.org/t/p/w150/" + show.poster_path}/>
+        </Link>
       </div>
     )
   }) :

@@ -9,8 +9,10 @@ const nowplaying = (props) => {
   listing = props.props.map((movie, i) => {
     return(
       <div key={i} className="content">
-        <p>{movie.title}</p>
-        <img src={"https://image.tmdb.org/t/p/w150/" + movie.poster_path}/>
+        <Link to={"/detail/movie/" + movie.id}>
+          <p>{movie.title}</p>
+          <img src={"https://image.tmdb.org/t/p/w150/" + movie.poster_path}/>
+        </Link>
       </div>
     )
   }) :
