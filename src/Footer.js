@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chingu from './Chingu';
 
 export default class Footer extends Component {
   constructor(props) {
@@ -19,6 +20,8 @@ export default class Footer extends Component {
           <li><a href="#">Link 5</a></li>
           <li><a href="#">Link 6</a></li>
         </ul>
+
+        <Chingu />
 
         <a href="https://www.themoviedb.org/"><img src={'logo.png'} alt={"Blah"} className="tmdb_logo" /></a>
 
