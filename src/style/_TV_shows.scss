@@ -4,27 +4,46 @@ h1 {
   margin-bottom: 1em;
 }
 
+.flcontainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
 .tv_detail{
   margin-top: 1em;
   margin-bottom: 1em;
-
-   }
+  flex-basis: 25%;
+}
 
 
 
 
 
 .tv_cards {
-  width: 35%;
+  width: 100%;
   margin-left: auto;
   margin-right: 35%;
+  padding-bottom: 2em;
+  padding-top: .5em;
   height: 90%;
-
+  position: relative;
   text-align: center;
+  overflow: hidden;
 
-  img {
+
+
+  .img_title{
     margin-left: auto;
     margin-right: auto;
+    width: 185px;
+    height: 278px;
+
+    .img {
+      width: 185px;
+      height: 278px;
+    }
   }
 
   p {
@@ -36,8 +55,9 @@ h1 {
   }
 
   h3 {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: .5em;
+    line-height: 1em;
+    z-index: 10;
   }
 
   h4 {
@@ -46,9 +66,14 @@ h1 {
     margin-top: auto;
   }
 }
-
+.tv_cards:hover{
+  background-color: #2c3e50;
+}
 
 @media (min-width: 1200px)  {
+  .flcontainer{
+    display: inline;
+  }
 
   .tv_shows_container {
     display: inline-block;
@@ -105,7 +130,7 @@ h1 {
     }
 
     h4 {
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width:100%;
       padding-top: .75em;
@@ -114,4 +139,34 @@ h1 {
     }
 
   }
+}
+
+.pin {
+  position: relative;
+}
+
+.slide-enter {
+  position: absolute;
+  margin-left: -100px;
+  opacity: 0.01;
+}
+
+.slide-enter.slide-enter-active {
+  margin-left: 0px;
+  opacity: 1;
+  transition: opacity 500ms ease-out, margin-left 500ms ease-out;
+}
+
+.slide-leave {
+  z-index: -1;
+  position: absolute;
+  margin-left: 0px;
+  top: 0%;
+  opacity: 1;
+}
+
+.slide-leave.slide-leave-active {
+  opacity: 0.01;
+  margin-left: 100px;
+  transition: opacity 300ms ease-out, margin-left 300ms ease-out;
 }

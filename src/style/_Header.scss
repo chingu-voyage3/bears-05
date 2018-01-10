@@ -1,8 +1,11 @@
 
+.mainHeader {
+  background-color: #222222;
+}
 
 .mainHeader__navigation {
     display: flex;
-    margin-left: 1em;
+    //margin-left: 1em;
 }
 
 .mainHeader__navigation__logo {
@@ -15,13 +18,15 @@
 .mainHeader__navigation__links {
     flex: 1;
     text-align: right;
+    margin-right: 1.5em;
+
     a {
         display: inline-block;
         padding: 1em;
         font-size: 0.9rem;
     }
     a.active {
-        background: black;
+        background: #1EAD9B;
     }
 }
 
@@ -33,6 +38,7 @@
 .submenu ul {
     display: flex;
     justify-content: flex-end;
+    margin-right: 1.5em;
 }
 
 .submenu li {
@@ -41,8 +47,14 @@
     font-size: 0.8em;
 }
 
+.submenu li.active {
+    color: $Secondary;
+}
+
 .searchbar {
     display: flex;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .searchbar__input {

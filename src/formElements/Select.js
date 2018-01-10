@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Select = (props) => {
+const Select = (props) => {  
 
   let attr = props.props
+
   let closedStyles = {
     opacity: "0",
     width: "0%",
@@ -35,7 +36,7 @@ const Select = (props) => {
 
   let options = attr.options.map((option, i) => {
     return(
-      <li onClick={(e) => {attr.method(e, option); optionClick(e)}} key={i}>{option}</li>
+      <li onClick={(e) => {attr.method(e, attr.values[i]); optionClick(e)}} key={i}>{option}</li>
     )
   })  
 
@@ -43,9 +44,7 @@ const Select = (props) => {
     <div className="select">
       <label onClick={(e) => {openClose(e)}}>
         {
-        attr.name === null ?
-        "Select Team Member" :
-        attr.name
+        attr.label
         }
       </label>
       <ul>

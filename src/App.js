@@ -15,6 +15,7 @@ import Searchbar from './Searchbar';
 import TvShows from './TV_shows';
 //import Chingu from './Chingu';
 
+
 class App extends Component {
   render() {
     return (
@@ -25,7 +26,7 @@ class App extends Component {
           <Route path="/results/:query" component={Results}/>
           <Route path="/about" component={About}/>
           <Route path="/discover" component={Discover}/>
-          <Route path="/tv/:name" component={TV}/>
+          <Route path="/tv" component={TV}/>
           <Route path="/movies" component={Movies}/>
           <Route path="/" component={Landing}/>
         </Switch>
