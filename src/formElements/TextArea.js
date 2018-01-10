@@ -4,7 +4,7 @@ const TextArea = (props) => {
 
   return(
     <div>
-      <label>Test</label>
+      <label>text</label>
       <textarea/>
     </div>
   )

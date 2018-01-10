@@ -191,6 +191,12 @@ body {
 .textInput label.noAnimate input {
   border-bottom: 2px solid white; }
 
+textarea {
+  height: 20em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .select {
   position: relative;
   height: 2em;
