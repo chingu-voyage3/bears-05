@@ -1,5 +1,11 @@
+
+h1 {
+  padding-top: 2.5em;
+}
+
 .switch {
   display: flex;
+  padding: 1em;
 }
 
 .switch li {
@@ -9,7 +15,7 @@
   text-align: center;
   width: 50%;
   &:first-child {
-    border-right: 1px solid $Primary;
+    border-right: 2px solid $Primary;
   }
 }
 
@@ -25,13 +31,51 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 1em;
 }
 
 .element {
-  width: 135px;
-  margin-bottom: 1em;
+  //width: 135px;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .element__poster {
   max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+  .switch {
+    width: 30%;
+    margin: auto;
+  }
+
+  .filters {
+    width: 20%;
+    margin: auto;
+    padding-top: .5em;
+    padding-bottom: 3em;
+  }
+
+  .content.discovery {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding-top: 1em;
+
+  }
+
+  .element {
+    margin-bottom: 1em;
+  }
+
+  .select li {
+    display: block;
+  }
 }

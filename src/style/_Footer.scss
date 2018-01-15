@@ -3,6 +3,7 @@
   height: auto;
   background-color: #222222;
   clear: both;
+  margin-top: 3em;
 
   ul {
     text-align: left;
@@ -16,16 +17,24 @@
   .tmdb_logo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    margin-top: 2em;
     padding-bottom: 2em;
+    width: 50%;
   }
+
 }
 
 
 @media (min-width: 1200px) {
   .footer {
-    height: 15em;
+    height: auto;
     text-align: center;
+    margin-top: 3em;
+
+    .tmdb_logo {
+      width: 10%;
+    }
+
   }
 
   ul {

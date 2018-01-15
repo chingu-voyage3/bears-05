@@ -27,7 +27,7 @@ class Header extends Component {
 			<header className="mainHeader">
         <nav className="mainHeader__navigation">
 					<Link className="mainHeader__navigation__logo" to="/">
-						<img src=""/>
+						<img src="" alt=""/>
 					</Link>
 					<ul className="mainHeader__navigation__links">
 						<Link className={location === "movies" ? "active" : null} to="/movies">Movies</Link>

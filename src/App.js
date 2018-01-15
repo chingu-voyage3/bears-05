@@ -8,10 +8,18 @@ import Discover from './discover';
 import TV from './tv';
 import Movies from './movies';
 import './App.css';
+import InTheaters from './In_theaters';
+import Navigation from './Navigation';
+import Footer from './Footer';
+import Searchbar from './Searchbar';
+import TvShows from './TV_shows';
+//import Chingu from './Chingu';
+
 
 class App extends Component {
   render() {
     return (
+      <div>
       <Router>
         <Switch>
           <Route path="/detail/:type/:id" component={Detail}/>
@@ -23,6 +31,9 @@ class App extends Component {
           <Route path="/" component={Landing}/>
         </Switch>
       </Router>
+
+      <Footer />
+      </div>
     );
   }
 }
